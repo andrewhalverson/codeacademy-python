@@ -701,23 +701,27 @@ while while_turn == 2:
 		guess = 0 #for the first turn
 		print "Player 1's turn"
 		print_board(board)
+		b = 1
+		c = 1
+		s = 1
+		d = 1
 		if (guess_row == one_sec_ship4_row and guess_col == one_sec_ship4_col) or (guess_row == two_sec_ship4_row and guess_col == two_sec_ship4_col) or (guess_row == one_sec_ship1_row and guess_col == one_sec_ship1_col) or (guess_row == two_sec_ship1_row and guess_col == two_sec_ship1_col) or (guess_row == three_sec_ship1_row and guess_col == three_sec_ship1_col)or (guess_row == four_sec_ship1_row and guess_col == four_sec_ship1_col) or (guess_row == five_sec_ship1_row and guess_col == five_sec_ship1_col) or (guess_row == one_sec_ship2_row and guess_col == one_sec_ship2_col) or (guess_row == two_sec_ship2_row and guess_col == two_sec_ship2_col) or (guess_row == three_sec_ship2_row and guess_col == three_sec_ship2_col) or (guess_row == four_sec_ship2_row and guess_col == four_sec_ship2_col) or (guess_row == one_sec_ship3_row and guess_col == one_sec_ship3_col) or (guess_row == two_sec_ship3_row and guess_col == two_sec_ship3_col) or (guess_row == three_sec_ship3_row and guess_col == three_sec_ship3_col):
 			board[guess_row][guess_col] = "X"
 			if (guess_row == one_sec_ship1_row and guess_col == one_sec_ship1_col) or (guess_row == two_sec_ship1_row and guess_col == two_sec_ship1_col) or (guess_row == three_sec_ship1_row and guess_col == three_sec_ship1_col)or (guess_row == four_sec_ship1_row and guess_col == four_sec_ship1_col) or (guess_row == five_sec_ship1_row and guess_col == five_sec_ship1_col):
 				if board[one_sec_ship1_row][one_sec_ship1_col] == "X" and board[two_sec_ship1_row][two_sec_ship1_col] == "X" and board[three_sec_ship1_row][three_sec_ship1_col] == "X" and board[four_sec_ship1_row][four_sec_ship1_col] == "X"and board[five_sec_ship1_row][five_sec_ship1_col] == "X":
-					b = "You sank my battleship!"
-				if (guess_row == one_sec_ship2_row and guess_col == one_sec_ship2_col) or (guess_row == two_sec_ship2_row and guess_col == two_sec_ship2_col) or (guess_row == three_sec_ship2_row and guess_col == three_sec_ship2_col) or (guess_row == four_sec_ship2_row and guess_col == four_sec_ship2_col):
-					if board[one_sec_ship2_row][one_sec_ship2_col] == "X" and board[two_sec_ship2_row][two_sec_ship2_col] == "X" and board[three_sec_ship2_row][three_sec_ship2_col] == "X" and board[four_sec_ship2_row][four_sec_ship2_col]:
-						c = "You sank my cruiser!"
-				if (guess_row == one_sec_ship3_row and guess_col == one_sec_ship3_col) or (guess_row == two_sec_ship3_row and guess_col == two_sec_ship3_col) or (guess_row == three_sec_ship3_row and guess_col == three_sec_ship3_col):
-					if board[one_sec_ship3_row][one_sec_ship3_col] == "X" and board[two_sec_ship3_row][two_sec_ship3_col] == "X" and board[three_sec_ship3_row][three_sec_ship3_col] == "X":
-						s = "You sank my submarine!"
-				if (guess_row == one_sec_ship4_row and guess_col == one_sec_ship4_col) or (guess_row == two_sec_ship4_row and guess_col == two_sec_ship4_col):
-					if board[one_sec_ship4_row][one_sec_ship4_col] == "X" and board[two_sec_ship4_row][two_sec_ship4_col] == "X":
-						d = "You sank my destroyer!"
+					b = 2
+			if (guess_row == one_sec_ship2_row and guess_col == one_sec_ship2_col) or (guess_row == two_sec_ship2_row and guess_col == two_sec_ship2_col) or (guess_row == three_sec_ship2_row and guess_col == three_sec_ship2_col) or (guess_row == four_sec_ship2_row and guess_col == four_sec_ship2_col):
+				if board[one_sec_ship2_row][one_sec_ship2_col] == "X" and board[two_sec_ship2_row][two_sec_ship2_col] == "X" and board[three_sec_ship2_row][three_sec_ship2_col] == "X" and board[four_sec_ship2_row][four_sec_ship2_col]:
+					c = 2
+			if (guess_row == one_sec_ship3_row and guess_col == one_sec_ship3_col) or (guess_row == two_sec_ship3_row and guess_col == two_sec_ship3_col) or (guess_row == three_sec_ship3_row and guess_col == three_sec_ship3_col):
+				if board[one_sec_ship3_row][one_sec_ship3_col] == "X" and board[two_sec_ship3_row][two_sec_ship3_col] == "X" and board[three_sec_ship3_row][three_sec_ship3_col] == "X":
+					s = 2
+			if (guess_row == one_sec_ship4_row and guess_col == one_sec_ship4_col) or (guess_row == two_sec_ship4_row and guess_col == two_sec_ship4_col):
+				if board[one_sec_ship4_row][one_sec_ship4_col] == "X" and board[two_sec_ship4_row][two_sec_ship4_col] == "X":
+					d = 2
 		if board[one_sec_ship4_row][one_sec_ship4_col] == "X" and board[two_sec_ship4_row][two_sec_ship4_col] == "X" and board[one_sec_ship1_row][one_sec_ship1_col] == "X" and board[two_sec_ship1_row][two_sec_ship1_col] == "X" and board[three_sec_ship1_row][three_sec_ship1_col] == "X" and board[four_sec_ship1_row][four_sec_ship1_col] == "X"and board[five_sec_ship1_row][five_sec_ship1_col] == "X" and board[one_sec_ship2_row][one_sec_ship2_col] == "X" and board[two_sec_ship2_row][two_sec_ship2_col] == "X" and board[three_sec_ship2_row][three_sec_ship2_col] == "X" and board[four_sec_ship2_row][four_sec_ship2_col] == "X" and board[one_sec_ship3_row][one_sec_ship3_col] == "X" and board[two_sec_ship3_row][two_sec_ship3_col] == "X" and board[three_sec_ship3_row][three_sec_ship3_col] == "X":
 			print ""
-			print "Color me surprised, you actually won."
+			print "You win Player 1!"
 			turn_player = 4 # Begins the celebratory statement below
 			break
 		if (guess_row < 0 or guess_row > 10) or (guess_col < 0 or guess_col > 10):
@@ -731,17 +735,17 @@ while while_turn == 2:
 		print_board(board)
 		print "Player 1's board"
 		print_board2(board2)
-		if b == "You sank my battleship1":
-			print b 
-			b = 1
-		if c == "You sank my cruiser!":
-			print c
+		if b == 2:
+			print "You sank my battleship1"
+			b2 = 1
+		if c == 2:
+			print "You sank my cruiser!"
 			c = 1
-		if s == "You sank my submarine!":
-			print s
+		if s == 2:
+			print "You sank my submarine!"
 			s = 1
-		if d == "You sank my destroyer":
-			print d
+		if d == 2:
+			print "You sank my destroyer!"
 			d = 1 
 		print "Player 2's turn"
 		turn_player = 3
@@ -752,23 +756,27 @@ while while_turn == 2:
 		guess_col2 = verify_int(raw_input("Guess Col:"))
 		guess_col2 = guess_col2 - 1
 		guess = 0
+		b2 = 1
+		c2 = 1
+		s2 = 1
+		d2 = 1
 		print "Player 2's turn"
 		if (guess_row2 == one_sec_ship4_row2 and guess_col2 == one_sec_ship4_col2) or (guess_row2 == two_sec_ship4_row2 and guess_col2 == two_sec_ship4_col2) or (guess_row2 == one_sec_ship1_row2 and guess_col2 == one_sec_ship1_col2) or (guess_row2 == two_sec_ship1_row2 and guess_col2 == two_sec_ship1_col2) or (guess_row2 == three_sec_ship1_row2 and guess_col2 == three_sec_ship1_col2)or (guess_row2 == four_sec_ship1_row2 and guess_col2 == four_sec_ship1_col2) or (guess_row2 == five_sec_ship1_row2 and guess_col2 == five_sec_ship1_col2) or (guess_row2 == one_sec_ship2_row2 and guess_col2 == one_sec_ship2_col2) or (guess_row2 == two_sec_ship2_row2 and guess_col2 == two_sec_ship2_col2) or (guess_row2 == three_sec_ship2_row2 and guess_col2 == three_sec_ship2_col2) or (guess_row2 == four_sec_ship2_row2 and guess_col2 == four_sec_ship2_col2) or (guess_row2 == one_sec_ship3_row2 and guess_col2 == one_sec_ship3_col2) or (guess_row2 == two_sec_ship3_row2 and guess_col2 == two_sec_ship3_col2) or (guess_row2 == three_sec_ship3_row2 and guess_col2 == three_sec_ship3_col2):
 			board2[guess_row2][guess_col2] = "X"
 			if (guess_row2 == one_sec_ship1_row2 and guess_col2 == one_sec_ship1_col2) or (guess_row2 == two_sec_ship1_row2 and guess_col2 == two_sec_ship1_col2) or (guess_row2 == three_sec_ship1_row2 and guess_col2 == three_sec_ship1_col2)or (guess_row2 == four_sec_ship1_row2 and guess_col2 == four_sec_ship1_col2) or (guess_row2 == five_sec_ship1_row2 and guess_col2 == five_sec_ship1_col2):
 				if board2[one_sec_ship1_row2][one_sec_ship1_col2] == "X" and board2[two_sec_ship1_row2][two_sec_ship1_col2] == "X" and board2[three_sec_ship1_row2][three_sec_ship1_col2] == "X" and board2[four_sec_ship1_row2][four_sec_ship1_col2] == "X" and board2[five_sec_ship1_row2][five_sec_ship1_col2] == "X":
-					b2 = "You sank my battleship!"
+					b2 = 2
 			if (guess_row2 == one_sec_ship2_row2 and guess_col2 == one_sec_ship2_col2) or (guess_row2 == two_sec_ship2_row2 and guess_col2 == two_sec_ship2_col2) or (guess_row2 == three_sec_ship2_row2 and guess_col2 == three_sec_ship2_col2) or (guess_row2 == four_sec_ship2_row2 and guess_col2 == four_sec_ship2_col2):
 				if board2[one_sec_ship2_row2][one_sec_ship2_col2] == "X" and board2[two_sec_ship2_row2][two_sec_ship2_col2] == "X" and board2[three_sec_ship2_row2][three_sec_ship2_col2] == "X" and board2[four_sec_ship2_row2][four_sec_ship2_col2] == "X":
-					c2 = "You sank my cruiser!"
+					c2 = 2
 			if board2[one_sec_ship3_row2][one_sec_ship3_col2] == "X" and board2[two_sec_ship3_row2][two_sec_ship3_col2] == "X" and board2[three_sec_ship3_row2][three_sec_ship3_col2] == "X":
 				if (guess_row2 == one_sec_ship3_row2 and guess_col2 == one_sec_ship3_col2) or (guess_row2 == two_sec_ship3_row2 and guess_col2 == two_sec_ship3_col2) or (guess_row2 == three_sec_ship3_row2 and guess_col2 == three_sec_ship3_col2):
-					s2 = "You sank my submarine!"
+					s2 = 2
 			if (guess_row2 == one_sec_ship4_row2 and guess_col2 == one_sec_ship4_col2) or (guess_row2 == two_sec_ship4_row2 and guess_col2 == two_sec_ship4_col2):
 				if board2[one_sec_ship4_row2][one_sec_ship4_col2] == "X" and board2[two_sec_ship4_row2][two_sec_ship4_col2]:
-					d2 = "You sank my  destroyer!"
+					d2 = 2
 		if board2[one_sec_ship4_row2][one_sec_ship4_col2] == "X" and board2[two_sec_ship4_row2][two_sec_ship4_col2] == "X" and board2[one_sec_ship1_row2][one_sec_ship1_col2] == "X" and board2[two_sec_ship1_row2][two_sec_ship1_col2] == "X" and board2[three_sec_ship1_row2][three_sec_ship1_col2] == "X" and board2[four_sec_ship1_row2][four_sec_ship1_col2] == "X" and board2[five_sec_ship1_row2][five_sec_ship1_col2] == "X" and board2[one_sec_ship2_row2][one_sec_ship2_col2] == "X" and board2[two_sec_ship2_row2][two_sec_ship2_col2] == "X" and board2[three_sec_ship2_row2][three_sec_ship2_col2] == "X" and board2[four_sec_ship2_row2][four_sec_ship2_col2] == "X" and board2[one_sec_ship3_row2][one_sec_ship3_col2] == "X" and board2[two_sec_ship3_row2][two_sec_ship3_col2] == "X" and board2[three_sec_ship3_row2][three_sec_ship3_col2] == "X":
-			print "Color  me surprised, you actually won."
+			print "You win Player 2!"
 			turn_player = 5
 			break
 		if (guess_row2 < 0 or guess_row2 > 10) or (guess_col2 < 0 or guess_col2 > 10):
@@ -782,23 +790,35 @@ while while_turn == 2:
 		print_board(board)
 		print "Player 1's board"
 		print_board2(board2)
-		if b2 == "You sank my battleship1":
-			print b2 
+		if b2 == 2:
+			print "You sank my battleship!"
 			b2 = 1
-		if c2 == "You sank my cruiser!":
-			print c2
+		if c2 == 2:
+			print "You sank my cruiser!"
 			c2 = 1
-		if s2 == "You sank my submarine!":
-			print s2
+		if s2 == 2:
+			print "You sank my submarine!"
 			s2 = 1
-		if d2 == "You sank my destroyer":
-			print d2
+		if d2 == 2:
+			print "You sank my destroyer!"
 			d2 = 1 
 		print "Player 1's turn"
 		turn_player = 2
 
-	if turn_player == 4:
+	while turn_player == 4:
 		print "Player 1 wins"
+		if __name__ == "__main__":
+			answer = raw_input("Do you want to play again?")
+			if answer.strip() in "y Y yes Yes YES".split():
+				restart_program()
+			if answer.strip() in "n N no No NO".split():
+				sys.exit()
 
-	if turn_player == 5:
+	while turn_player == 5:
 		print "player 2 wins"
+		if __name__ == "__main__":
+			answer = raw_input("Do you want to play again?")
+			if answer.strip() in "y Y yes Yes YES".split():
+				restart_program()
+			if answer.strip() in "n N no No NO".split():
+				sys.exit()
