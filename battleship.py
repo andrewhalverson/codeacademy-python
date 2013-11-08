@@ -699,7 +699,6 @@ while while_turn == 2:
 		guess_col = verify_int(raw_input("Guess Col:"))
 		guess_col = guess_col -1
 		guess = 0 #for the first turn
-		print "Player 1's turn"
 		print_board(board)
 		b = 1
 		c = 1
